@@ -11,4 +11,4 @@ Each mission folder contains subfolders, one for each notebook. These subfolders
 
 ## Contributing
 
-For information on contributing - including a style guide and Notebook template - please see the 'contributing' folder.
+For information on contributing - including a style guide and Notebook template - please see the 'contributing' folder..
