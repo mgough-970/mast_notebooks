@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Characterizing Variable Stars with APOGEE + TESS &#8212; MAST Notebook Repository</title>
   
@@ -29,35 +28,33 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/main.css?v=32d70693" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-SK672ZMP7G"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -65,12 +62,16 @@
                 gtag('js', new Date());
                 gtag('config', 'G-SK672ZMP7G');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-SK672ZMP7G');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/SDSS/APOGEE_TESS_tutorial/APOGEE_TESS_tutorial';</script>
@@ -174,7 +175,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -452,9 +464,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -479,14 +491,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://timeseries.science.stsci.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/spacetelescope/mast_notebooks&urlpath=lab/tree/mast_notebooks/notebooks/SDSS/APOGEE_TESS_tutorial/APOGEE_TESS_tutorial.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onJupyterHub"
+   title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_jupyterhub.svg">
+    <img alt="JupyterHub logo" src="../../../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -626,9 +638,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -699,10 +711,10 @@ document.write(`
                   
   <p><a id="top"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="characterizing-variable-stars-with-apogee-tess">
-<h1>Characterizing Variable Stars with APOGEE + TESS<a class="headerlink" href="#characterizing-variable-stars-with-apogee-tess" title="Permalink to this heading">#</a></h1>
+<h1>Characterizing Variable Stars with APOGEE + TESS<a class="headerlink" href="#characterizing-variable-stars-with-apogee-tess" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <section id="learning-goals">
-<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Permalink to this heading">#</a></h2>
+<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <p>By the end of this tutorial, you will:</p>
 <ul class="simple">
 <li><p>Understand how to search the MAST Archive and download SDSS APOGEE data using <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code></p></li>
@@ -712,54 +724,54 @@ document.write(`
 </ul>
 </section>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><span class="xref myst">Introduction</span></p></li>
-<li><p><span class="xref myst">Imports</span></p></li>
-<li><p><span class="xref myst">Accessing APOGEE data at MAST</span></p>
+<li><p><a class="reference internal" href="#Introduction"><span class="xref myst">Introduction</span></a></p></li>
+<li><p><a class="reference internal" href="#Imports"><span class="xref myst">Imports</span></a></p></li>
+<li><p><a class="reference internal" href="#APOGEE"><span class="xref myst">Accessing APOGEE data at MAST</span></a></p>
 <ul>
-<li><p><span class="xref myst">Querying all APOGEE data</span></p></li>
-<li><p><span class="xref myst">Searching for a specific star</span></p></li>
-<li><p><span class="xref myst">Downloading APOGEE data products</span></p></li>
-<li><p><span class="xref myst">Plotting an APOGEE spectrum</span></p></li>
-<li><p><span class="xref myst">Downloading the APOGEE allStar catalog</span></p></li>
-<li><p><span class="xref myst">Plotting an HR diagram from APOGEE</span></p></li>
+<li><p><a class="reference internal" href="#APOGEE-query"><span class="xref myst">Querying all APOGEE data</span></a></p></li>
+<li><p><a class="reference internal" href="#APOGEE-star"><span class="xref myst">Searching for a specific star</span></a></p></li>
+<li><p><a class="reference internal" href="#APOGEE-download"><span class="xref myst">Downloading APOGEE data products</span></a></p></li>
+<li><p><a class="reference internal" href="#APOGEE-spectrum"><span class="xref myst">Plotting an APOGEE spectrum</span></a></p></li>
+<li><p><a class="reference internal" href="#APOGEE-allstar"><span class="xref myst">Downloading the APOGEE allStar catalog</span></a></p></li>
+<li><p><a class="reference internal" href="#APOGEE-plot"><span class="xref myst">Plotting an HR diagram from APOGEE</span></a></p></li>
 </ul>
 </li>
-<li><p><span class="xref myst">Searching for TESS data of this star</span></p>
+<li><p><a class="reference internal" href="#TESS"><span class="xref myst">Searching for TESS data of this star</span></a></p>
 <ul>
-<li><p><span class="xref myst">Coordinate search using astroquery.mast</span></p></li>
-<li><p><span class="xref myst">Plotting a light curve from TESS</span></p></li>
+<li><p><a class="reference internal" href="#TESS-query"><span class="xref myst">Coordinate search using astroquery.mast</span></a></p></li>
+<li><p><a class="reference internal" href="#TESS-lightcurve"><span class="xref myst">Plotting a light curve from TESS</span></a></p></li>
 </ul>
 </li>
-<li><p><span class="xref myst">Combining APOGEE and TESS data</span></p>
+<li><p><a class="reference internal" href="#Combining-APOGEE-and-TESS-data"><span class="xref myst">Combining APOGEE and TESS data</span></a></p>
 <ul>
-<li><p><span class="xref myst">Plotting APOGEE and TESS data together</span></p></li>
-<li><p><span class="xref myst">Exploring Different types of Variable Stars</span></p>
+<li><p><a class="reference internal" href="#Plotting-APOGEE-and-TESS-data-together"><span class="xref myst">Plotting APOGEE and TESS data together</span></a></p></li>
+<li><p><a class="reference internal" href="#Exploring-Variables"><span class="xref myst">Exploring Different types of Variable Stars</span></a></p>
 <ul>
-<li><p><span class="xref myst">RR-Lyrae Variable: 2M11361176+8117369</span></p></li>
-<li><p><span class="xref myst">Rotationally Variable - 2M19181706+5141323</span></p></li>
-<li><p><span class="xref myst">Eclipsing Binary - 2M19203184+3830492</span></p></li>
+<li><p><a class="reference internal" href="#rr-lyrae"><span class="xref myst">RR-Lyrae Variable: 2M11361176+8117369</span></a></p></li>
+<li><p><a class="reference internal" href="#rotationally-variable"><span class="xref myst">Rotationally Variable - 2M19181706+5141323</span></a></p></li>
+<li><p><a class="reference internal" href="#eclipsing-binary"><span class="xref myst">Eclipsing Binary - 2M19203184+3830492</span></a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><span class="xref myst">Additional Resources</span></p>
+<li><p><a class="reference internal" href="#Resources"><span class="xref myst">Additional Resources</span></a></p>
 <ul>
-<li><p><span class="xref myst">How to Cite</span></p></li>
-<li><p><span class="xref myst">About This Notebook</span></p></li>
+<li><p><a class="reference internal" href="#Citations"><span class="xref myst">How to Cite</span></a></p></li>
+<li><p><a class="reference internal" href="#About"><span class="xref myst">About This Notebook</span></a></p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p><a id="Introduction"></a></p>
 <p>The <a class="reference external" href="https://www.sdss4.org/dr17/irspec/">Apache Point Observatory Galactic Evolution Experiment (APOGEE)</a> survey provides infrared-wavelength high-resolution spectroscopy for over 650,000 unique stars from the Milky Way and nearby dwarf galaxies. APOGEE collected data between 2011 - 2020 as part of the <a class="reference external" href="https://www.sdss4.org">Sloan Digital Sky Survey (SDSS-IV) project</a>. APOGEE data is now available at the <a class="reference external" href="https://archive.stsci.edu">Mikulski Archive for Space Telescopes (MAST)</a> through the <a class="reference external" href="https://outerspace.stsci.edu/display/SDSS/The+SDSS+Legacy+Archive+at+MAST">SDSS Legacy Archive at MAST</a>.</p>
 <p>In this notebook tutorial, we will demonstrate how to access APOGEE data at MAST using Python. One APOGEE star, a Cepheid Variable named <code class="docutils literal notranslate"><span class="pre">V1154-Cyg</span></code> will be used to demonstrate the basics of how to download and plot APOGEE data. We will then combine this APOGEE spectrum with light curves from the TESS mission, also accessible from MAST, to study this variable star.</p>
 </section>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h2>
 <p><a id="Imports"></a></p>
 <p>The main packages we’re using for this notebook and their use-cases are:</p>
 <ul class="simple">
@@ -804,11 +816,11 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="accessing-apogee-data-at-mast">
-<h1>Accessing APOGEE data at MAST<a class="headerlink" href="#accessing-apogee-data-at-mast" title="Permalink to this heading">#</a></h1>
+<h1>Accessing APOGEE data at MAST<a class="headerlink" href="#accessing-apogee-data-at-mast" title="Link to this heading">#</a></h1>
 <p>The <a class="reference external" href="https://outerspace.stsci.edu/display/SDSS/The+SDSS+Legacy+Archive+at+MAST">SDSS Legacy Archive at MAST</a> hosts all of the science-ready data products from the <a class="reference external" href="https://www.sdss4.org/dr17/irspec/">SDSS-IV APOGEE Survey</a>, which includes spectra for over 650,000 unique stars in the Milky Way. APOGEE acquired observations in both the northern and southern hemispheres, targeting the disk, bulge, bar, and halo components of the Milky Way, as well as several hundred stars in nearby satellite galaxies (including the LMC and SMC). This notebook will demonstrate how to search and download APOGEE data using MAST!</p>
 <p><a id="APOGEE-query"></a></p>
 <section id="querying-all-apogee-data">
-<h2>Querying all APOGEE data<a class="headerlink" href="#querying-all-apogee-data" title="Permalink to this heading">#</a></h2>
+<h2>Querying all APOGEE data<a class="headerlink" href="#querying-all-apogee-data" title="Link to this heading">#</a></h2>
 <p>Searching for APOGEE data is straightforward with <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code>. In this example, we use <code class="docutils literal notranslate"><span class="pre">Observations.query_criteria</span></code> and search for <code class="docutils literal notranslate"><span class="pre">provenance_name</span> <span class="pre">=</span> <span class="pre">'APOGEE'</span></code>. This will return a table describing all of the APOGEE data hosted by the MAST archive.</p>
 <p>Other useful search parameters for APOGEE data might include:</p>
 <ul class="simple">
@@ -853,7 +865,7 @@ document.write(`
 <p><a id="APOGEE-star"></a></p>
 </section>
 <section id="searching-for-a-specific-star">
-<h2>Searching for a specific star<a class="headerlink" href="#searching-for-a-specific-star" title="Permalink to this heading">#</a></h2>
+<h2>Searching for a specific star<a class="headerlink" href="#searching-for-a-specific-star" title="Link to this heading">#</a></h2>
 <p>Let’s narrow down the search to one particular star: cepheid variable “V1154-Cyg”. Cepheid Variables are pulsating stars, which physically grow larger and smaller, and as a result brighter and dimmer, on a regular rhythm of few days. Cepheid variables in particular are useful to study in astronomy because their pulsation period correlates with their intrinsic brightness, making it easy to determine how far away the star is! Later in this notebook, we will look at some other kinds of variable stars.</p>
 <p>We can search for this star in particular using the <code class="docutils literal notranslate"><span class="pre">target_name</span></code> keyword:</p>
 <div class="cell docutils container">
@@ -885,7 +897,7 @@ document.write(`
 <p><a id="APOGEE-download"></a></p>
 </section>
 <section id="downloading-apogee-data-products">
-<h2>Downloading APOGEE data products<a class="headerlink" href="#downloading-apogee-data-products" title="Permalink to this heading">#</a></h2>
+<h2>Downloading APOGEE data products<a class="headerlink" href="#downloading-apogee-data-products" title="Link to this heading">#</a></h2>
 <p>List all of the data products available for this star using <code class="docutils literal notranslate"><span class="pre">Observations.get_product_list()</span></code>.</p>
 <p>There are 8 total files available for this star, which include the individual spectra from each visit (APVISIT; <code class="docutils literal notranslate"><span class="pre">apVisit-dr17-*-V1154_Cyg.fits</span></code>), the combined spectrum (APSTAR; <code class="docutils literal notranslate"><span class="pre">apStar-dr17-V1154_Cyg.fits</span></code>), the processed and anaylzed spectrum (ASPCAPSTAR; <code class="docutils literal notranslate"><span class="pre">aspcapStar-dr17-V1154_Cyg.fits</span></code>) which contains the best-fit model and stellar parameters from the <a class="reference external" href="https://www.sdss4.org/dr17/irspec/aspcap/">APOGEE Stellar Parameters and Chemical Abundance Pipeline (ASPCAP)</a>. Only the apStar and aspcapStar files are tagged as “Minimum Recommended Products’</p>
 <p>More information on the APOGEE data products available at MAST can be found on the <a class="reference external" href="https://outerspace.stsci.edu/display/DraftSDSS/APOGEE+Data+Products">APOGEE Data Products</a> in the Archive Manual, and more information on all of these products can be seen in the search results table:</p>
@@ -936,7 +948,7 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="plotting-an-apogee-spectrum">
-<h1>Plotting an APOGEE Spectrum<a class="headerlink" href="#plotting-an-apogee-spectrum" title="Permalink to this heading">#</a></h1>
+<h1>Plotting an APOGEE Spectrum<a class="headerlink" href="#plotting-an-apogee-spectrum" title="Link to this heading">#</a></h1>
 <p>Now let’s take a look at the file and plot the spectrum.</p>
 <p>Based on the descriptions in the <a class="reference external" href="https://data.sdss.org/datamodel/files/APOGEE_ASPCAP/APRED_VERS/ASPCAP_VERS/TELESCOPE/FIELD/aspcapStar.html">aspcapStar Data Model</a>, this file has four extensions:</p>
 <ul class="simple">
@@ -1016,7 +1028,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <p>This is the APOGEE spectrum for this star! It looks great. We can tell it must be a hot star because of the large Hydrogen Absorption lines (for example around 15346, 15443, 15560 and 16113 angstroms - this is the Hydrogen Brackett Series!) The gaps in the spectrum around 15800 and 16400 Angstroms are due to the APOGEE instrumentation: APOGEE observes across 3 ccds, which have a small gap in wavelength coverage between them.</p>
 <p><a id="APOGEE-allstar"></a></p>
 <section id="downloading-the-apogee-allstar-catalog">
-<h2>Downloading the APOGEE allStar Catalog<a class="headerlink" href="#downloading-the-apogee-allstar-catalog" title="Permalink to this heading">#</a></h2>
+<h2>Downloading the APOGEE allStar Catalog<a class="headerlink" href="#downloading-the-apogee-allstar-catalog" title="Link to this heading">#</a></h2>
 <p>We can also download the APOGEE allStar catalog, which contains a lot of useful information for the full APOGEE sample, including stellar parameters, chemical abundances, positions, and observation data for all of the stars in APOGEE.</p>
 <p>We can do this with the <code class="docutils literal notranslate"><span class="pre">download_file</span></code> function in astroquery, knowing the MAST data URL for the allStar catalog is <code class="docutils literal notranslate"><span class="pre">mast:SDSS/apogee/allStar-dr17-synspec_rev1.fits</span></code>.</p>
 <p>This is a fairly large file (3.9 GB), so this download may take a few minutes!</p>
@@ -1069,7 +1081,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <p><a id="APOGEE-plot"></a></p>
 </section>
 <section id="plotting-an-hr-diagram-or-kiel-diagram-with-apogee">
-<h2>Plotting an HR Diagram (or Kiel Diagram) with APOGEE<a class="headerlink" href="#plotting-an-hr-diagram-or-kiel-diagram-with-apogee" title="Permalink to this heading">#</a></h2>
+<h2>Plotting an HR Diagram (or Kiel Diagram) with APOGEE<a class="headerlink" href="#plotting-an-hr-diagram-or-kiel-diagram-with-apogee" title="Link to this heading">#</a></h2>
 <p>When characterizing stars, a useful plot is the <em>HR diagram</em>, which helps classify stars by their different types (for example, a star can be a Sun-like main sequence star or a massive Red Giant star). Let’s plot an HR Diagram using APOGEE data.</p>
 <p>Traditional HR diagrams plot a star’s <em>color</em> on the x-axis and its brightness (or <em>magnitude</em>) on the y-axis. For this excerise, we’ll be using the star’s <em>temperature</em> (<span class="math notranslate nohighlight">\(T_{eff}\)</span>) as a substitute for color and the surface gravity (<span class="math notranslate nohighlight">\(\log g\)</span>) as a proxy for brightness. This variation on the HR diagram is technically called a Kiel Diagram, but they are very similar in appearance and interpretation.</p>
 <div class="cell docutils container">
@@ -1108,11 +1120,11 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="searching-for-tess-data-of-this-star">
-<h1>Searching for TESS Data of this Star<a class="headerlink" href="#searching-for-tess-data-of-this-star" title="Permalink to this heading">#</a></h1>
+<h1>Searching for TESS Data of this Star<a class="headerlink" href="#searching-for-tess-data-of-this-star" title="Link to this heading">#</a></h1>
 <p>Now let’s search MAST for a light curve of our Cepheid Variable star.</p>
 <p><a id="TESS-query"></a></p>
 <section id="coordinate-search-using-astroquery-mast">
-<h2>Coordinate search using astroquery.mast<a class="headerlink" href="#coordinate-search-using-astroquery-mast" title="Permalink to this heading">#</a></h2>
+<h2>Coordinate search using astroquery.mast<a class="headerlink" href="#coordinate-search-using-astroquery-mast" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Retrieve RA and DEC of APOGEE star</span>
@@ -1214,7 +1226,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="plotting-a-light-curve-from-tess">
-<h1>Plotting a light curve from TESS<a class="headerlink" href="#plotting-a-light-curve-from-tess" title="Permalink to this heading">#</a></h1>
+<h1>Plotting a light curve from TESS<a class="headerlink" href="#plotting-a-light-curve-from-tess" title="Link to this heading">#</a></h1>
 <p>The TESS light curve file has three extensions:</p>
 <ul class="simple">
 <li><p>The primary header (HDU0)</p></li>
@@ -1271,11 +1283,11 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <p><a id="Combining-APOGEE-and-TESS-data"></a></p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="combining-apogee-and-tess-data">
-<h1>Combining APOGEE and TESS data<a class="headerlink" href="#combining-apogee-and-tess-data" title="Permalink to this heading">#</a></h1>
+<h1>Combining APOGEE and TESS data<a class="headerlink" href="#combining-apogee-and-tess-data" title="Link to this heading">#</a></h1>
 <p>Now we are ready to combine everything: the HR Diagram, the spectrum, and the TESS light curve into a single plot!</p>
 <p><a id="Plotting-APOGEE-and-TESS-data-together"></a></p>
 <section id="plotting-apogee-and-tess-data-together">
-<h2>Plotting APOGEE and TESS data together<a class="headerlink" href="#plotting-apogee-and-tess-data-together" title="Permalink to this heading">#</a></h2>
+<h2>Plotting APOGEE and TESS data together<a class="headerlink" href="#plotting-apogee-and-tess-data-together" title="Link to this heading">#</a></h2>
 <p>In the below cell, we define a helper function to plot all of the data together for our Cepheid Variable star:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1388,7 +1400,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <p><a id="Exploring-Variables"></a></p>
 </section>
 <section id="exploring-different-types-of-variable-stars">
-<h2>Exploring different types of Variable Stars<a class="headerlink" href="#exploring-different-types-of-variable-stars" title="Permalink to this heading">#</a></h2>
+<h2>Exploring different types of Variable Stars<a class="headerlink" href="#exploring-different-types-of-variable-stars" title="Link to this heading">#</a></h2>
 <p>So far in this notebook, we’ve plotted the stellar parameters, spectrum, and light curve of a Cepheid variable star. But what about other types of variables? Here are a few more stars in APOGEE that we will explore and plot in this section!</p>
 <ul class="simple">
 <li><p>2M11361176+8117369: a RR Lyrae Variable Star, a type of quickly-pulsating old, low-mass star</p></li>
@@ -1455,7 +1467,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <p><a id="rr-lyrae"></a></p>
 </section>
 <section id="rr-lyrae-variable-2m11361176-8117369">
-<h2>RR Lyrae Variable - 2M11361176+8117369<a class="headerlink" href="#rr-lyrae-variable-2m11361176-8117369" title="Permalink to this heading">#</a></h2>
+<h2>RR Lyrae Variable - 2M11361176+8117369<a class="headerlink" href="#rr-lyrae-variable-2m11361176-8117369" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the star name we want to search for</span>
@@ -1504,7 +1516,7 @@ Downloading APOGEE Data...
 <p><a id="rotationally-variable"></a></p>
 </section>
 <section id="rotationally-variable-2m19181706-5141323">
-<h2>Rotationally Variable - 2M19181706+5141323<a class="headerlink" href="#rotationally-variable-2m19181706-5141323" title="Permalink to this heading">#</a></h2>
+<h2>Rotationally Variable - 2M19181706+5141323<a class="headerlink" href="#rotationally-variable-2m19181706-5141323" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">star_name</span> <span class="o">=</span> <span class="s1">&#39;2M19181706+5141323&#39;</span>
@@ -1551,7 +1563,7 @@ Downloading APOGEE Data...
 <p><a id="eclipsing-binary"></a></p>
 </section>
 <section id="eclipsing-binary-star-2m19203184-3830492">
-<h2>Eclipsing Binary Star - 2M19203184+3830492<a class="headerlink" href="#eclipsing-binary-star-2m19203184-3830492" title="Permalink to this heading">#</a></h2>
+<h2>Eclipsing Binary Star - 2M19203184+3830492<a class="headerlink" href="#eclipsing-binary-star-2m19203184-3830492" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">star_name</span> <span class="o">=</span> <span class="s1">&#39;2M19203184+3830492&#39;</span>
@@ -1609,7 +1621,7 @@ WARNING: Quality Warning Flags on ASPCAP star parameters. ASPCAP parameters may 
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="additional-resources">
-<h1>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h1>
+<h1>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">#</a></h1>
 <p>Additional resources are linked below:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://outerspace.stsci.edu/display/SDSS/The+SDSS+Legacy+Archive+at+MAST">SDSS Legacy Archive at MAST</a></p></li>
@@ -1618,7 +1630,7 @@ WARNING: Quality Warning Flags on ASPCAP star parameters. ASPCAP parameters may 
 <li><p><a class="reference external" href="https://mast.stsci.edu/api/v0/index.html">MAST API</a></p></li>
 </ul>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p><a id="Citations"></a></p>
 <p>If you use MaNGA data for published research, see the following links for information on which citations to include in your paper:</p>
 <ul class="simple">
@@ -1629,14 +1641,14 @@ WARNING: Quality Warning Flags on ASPCAP star parameters. ASPCAP parameters may 
 </ul>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <p><a id="About"></a></p>
 <p><strong>Author(s):</strong> Julie Imig (jimig&#64;stsci.edu) <br>
 <strong>Keyword(s):</strong> Tutorial, SDSS, APOGEE, TESS, stars <br>
 <strong>First published:</strong> January 2025 <br>
 <strong>Last updated:</strong> January 2025 <br></p>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#top"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/style-guides/master/guides/images/stsci-logo.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/style-guides/master/guides/images/stsci-logo.png" style="width: 200px;" /></a></p>
 </section>
 </section>

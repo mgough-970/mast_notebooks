@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Creating a Color-Magnitude Diagram for Messier 13 &#8212; MAST Notebook Repository</title>
   
@@ -29,35 +28,33 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/main.css?v=32d70693" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-SK672ZMP7G"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -65,12 +62,16 @@
                 gtag('js', new Date());
                 gtag('config', 'G-SK672ZMP7G');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-SK672ZMP7G');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/SDSS/SDSS_LEGACY_IMAGING_cmd/cmd_diagram';</script>
@@ -174,7 +175,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -452,9 +464,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -479,14 +491,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://timeseries.science.stsci.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/spacetelescope/mast_notebooks&urlpath=lab/tree/mast_notebooks/notebooks/SDSS/SDSS_LEGACY_IMAGING_cmd/cmd_diagram.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onJupyterHub"
+   title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_jupyterhub.svg">
+    <img alt="JupyterHub logo" src="../../../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -626,9 +638,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -681,10 +693,10 @@ document.write(`
                   
   <p><a id="top"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="creating-a-color-magnitude-diagram-for-messier-13">
-<h1>Creating a Color-Magnitude Diagram for Messier 13<a class="headerlink" href="#creating-a-color-magnitude-diagram-for-messier-13" title="Permalink to this heading">#</a></h1>
+<h1>Creating a Color-Magnitude Diagram for Messier 13<a class="headerlink" href="#creating-a-color-magnitude-diagram-for-messier-13" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <section id="learning-goals">
-<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Permalink to this heading">#</a></h2>
+<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <p>By the end of this tutorial, you will:</p>
 <ul class="simple">
 <li><p>Understand how to use <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code> to download the SDSS Legacy Imaging Survey Data from the MAST archive.</p></li>
@@ -694,30 +706,30 @@ document.write(`
 </ul>
 </section>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><span class="xref myst">Introduction</span></p></li>
-<li><p><span class="xref myst">Imports</span></p></li>
-<li><p><span class="xref myst">Accessing SDSS Legacy Imaging Survey Data from MAST</span></p>
+<li><p><a class="reference internal" href="#introduction"><span class="xref myst">Introduction</span></a></p></li>
+<li><p><a class="reference internal" href="#imports"><span class="xref myst">Imports</span></a></p></li>
+<li><p><a class="reference internal" href="#accessing-sdss-legacy-imaging-survey-data-from-mast"><span class="xref myst">Accessing SDSS Legacy Imaging Survey Data from MAST</span></a></p>
 <ul>
-<li><p><span class="xref myst">Querying SDSS Legacy Imaging Survey</span></p></li>
-<li><p><span class="xref myst">Sampling SDSS Legacy Imaging Survey for M13</span></p></li>
-<li><p><span class="xref myst">Downloading Data Products</span></p></li>
-<li><p><span class="xref myst">Creating a Color-Magnitude Diagram</span></p></li>
+<li><p><a class="reference internal" href="#querying-sdss-legacy-imaging-survey"><span class="xref myst">Querying SDSS Legacy Imaging Survey</span></a></p></li>
+<li><p><a class="reference internal" href="#sampling-sdss-legacy-imaging-survey-for-m13"><span class="xref myst">Sampling SDSS Legacy Imaging Survey for M13</span></a></p></li>
+<li><p><a class="reference internal" href="#downloading-sdss-legacy-imaging-survey-data-products"><span class="xref myst">Downloading Data Products</span></a></p></li>
+<li><p><a class="reference internal" href="#creating-a-color-magnitude-diagram-of-m13"><span class="xref myst">Creating a Color-Magnitude Diagram</span></a></p></li>
 </ul>
 </li>
-<li><p><span class="xref myst">Finding the Distance to M13 Using Gaia</span></p></li>
-<li><p><span class="xref myst">Determining the Age of M13 Using Stellar Isochrone Matching</span></p></li>
-<li><p><span class="xref myst">End of Tutorial</span></p></li>
-<li><p><span class="xref myst">Exercises</span></p></li>
-<li><p><span class="xref myst">Exercise Solutions</span></p></li>
-<li><p><span class="xref myst">Additional Resources</span></p></li>
-<li><p><span class="xref myst">Citations</span></p></li>
-<li><p><span class="xref myst">About this Notebook</span></p></li>
+<li><p><a class="reference internal" href="#finding-the-distance-to-m13-using-data-from-gaia"><span class="xref myst">Finding the Distance to M13 Using Gaia</span></a></p></li>
+<li><p><a class="reference internal" href="#determining-the-age-of-m13-using-stellar-isochrone-matching"><span class="xref myst">Determining the Age of M13 Using Stellar Isochrone Matching</span></a></p></li>
+<li><p><a class="reference internal" href="#end-of-tutorial"><span class="xref myst">End of Tutorial</span></a></p></li>
+<li><p><a class="reference internal" href="#exercises"><span class="xref myst">Exercises</span></a></p></li>
+<li><p><a class="reference internal" href="#exercise-solutions"><span class="xref myst">Exercise Solutions</span></a></p></li>
+<li><p><a class="reference internal" href="#addtional-resources"><span class="xref myst">Additional Resources</span></a></p></li>
+<li><p><a class="reference internal" href="#citations"><span class="xref myst">Citations</span></a></p></li>
+<li><p><a class="reference internal" href="#about-this-notebook"><span class="xref myst">About this Notebook</span></a></p></li>
 </ul>
 </section>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>The Hertzsprung-Russell (HR) Diagram was independently discovered by Ejnar Hertzsprung and Henry Norris Russell in the early 20th century. This diagram effectively plots a star’s theoretical luminosity against its temperature.
 By examining the position of stars on the HR diagram, we can infer stellar properties such as age, metallicity, or mass. An HR Diagram is also useful for tracking the life cycle of stars. Stars in their hydrogen-core burning phases evolve leftwards on the HR diagram. Eventually, they leave the main sequence to start their red giant phases and move upwards as they begin burning helium in their cores <a class="reference external" href="https://astronomy.swin.edu.au/cosmos/h/hertzsprung-russell+diagram">[1]</a>.</p>
 <p>An observational variation of the HR Diagram is the <em>Color-Magnitude Diagram</em> (CMD), which uses color (a proxy for temperature) and magnitude (a proxy for luminosity). We can use photometric data from a star cluster to create a CMD, and then estimate the age by comparing the main sequence tracks and red giant branch to theoretical isochrones — curves that represent stars of the same age but with different masses, mapping their expected positions at various evolutionary stages. For example, an older cluster will have more stars on the red giant branch whereas a younger cluster will have more stars on the main sequence. The transition between the two evolutionary stages, called the <em>Main Sequence Turn-Off</em>, is the key to determining the age of a stellar cluster <a class="reference external" href="https://astronomyonline.org/Astrophotography/CMDDiagram.asp">[2]</a></p>
@@ -732,7 +744,7 @@ By examining the position of stars on the HR diagram, we can infer stellar prope
 <p>In this notebook, we’ll estimate the age of M13 using photometric data from the Sloan Digital Sky Survey’s (SDSS) Legacy Imaging Survey and stellar isochrones from the PARSEC database <a class="reference external" href="https://www.aanda.org/articles/aa/full_html/2022/09/aa44166-22/aa44166-22.html">[7]</a>. By plotting isochrone tracks for a range of ages and comparing them to the observed stellar distribution of M13, we can identify the isochrone that best fits the cluster’s data and thereby estimate its age.</p>
 </section>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h2>
 <p>The main packages and their use-cases in this tutorial are as follows:</p>
 <ul class="simple">
 <li><p><em>numpy</em> to handle array functions</p></li>
@@ -784,11 +796,11 @@ numpy &gt;= 1.26.4
 </section>
 <hr class="docutils" />
 <section id="accessing-sdss-legacy-imaging-survey-data-from-mast">
-<h2>Accessing SDSS Legacy Imaging Survey Data from MAST<a class="headerlink" href="#accessing-sdss-legacy-imaging-survey-data-from-mast" title="Permalink to this heading">#</a></h2>
+<h2>Accessing SDSS Legacy Imaging Survey Data from MAST<a class="headerlink" href="#accessing-sdss-legacy-imaging-survey-data-from-mast" title="Link to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://archive.stsci.edu/">Mikulski Archive for Space Telescopes (MAST)</a> hosts a large array of data from several telescope missions. In this tutorial, we will be specifically focusing on data from the Sloan Digital Sky Survey’s (SDSS) Imaging Survey.</p>
 <p>The <a class="reference external" href="https://www.sdss.org/dr18/imaging/">SDSS Legacy Imaging Survey</a> was the first SDSS survey completed! Beginning in 1998, the SDSS Legacy Imaging Survey captured around 35,000 square degrees of images until 2009, which covers about one-third of the whole sky. To do this, the survey took millions of 10 by 13 arcminute pictures (called “fields”). Not only does the SDSS Legacy Imaging Survey data at MAST provide users with preview images in .jpg format, but it also has photometric data in all five broad band SDSS filters (u, g, r, i, and z). For more information about the data and products from the SDSS Legacy Imaging Survey, you can check out the <a class="reference external" href="https://outerspace.stsci.edu/display/SDSS/Legacy+Imaging">SDSS Imaging Archive Manual</a>.</p>
 <section id="querying-sdss-legacy-imaging-survey">
-<h3>Querying SDSS Legacy Imaging Survey<a class="headerlink" href="#querying-sdss-legacy-imaging-survey" title="Permalink to this heading">#</a></h3>
+<h3>Querying SDSS Legacy Imaging Survey<a class="headerlink" href="#querying-sdss-legacy-imaging-survey" title="Link to this heading">#</a></h3>
 <p>You can query data from MAST using the <a class="reference external" href="https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html">website portal</a>. You can also query MAST data in Python using the package <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code>!</p>
 <p>We can query all of the SDSS Legacy Imaging data using <code class="docutils literal notranslate"><span class="pre">Observations.query_criteria</span></code> with <code class="docutils literal notranslate"><span class="pre">provenance_name</span> <span class="pre">=</span> <span class="pre">&quot;SDSS</span> <span class="pre">Legacy</span> <span class="pre">Imaging&quot;</span></code>. Since there is a large amount of data in the SDSS Legacy Imaging archive, we can display the first 10 results using the <code class="docutils literal notranslate"><span class="pre">pagesize</span></code> parameter as well as the <code class="docutils literal notranslate"><span class="pre">page</span></code> parameter.</p>
 <div class="cell docutils container">
@@ -834,7 +846,7 @@ numpy &gt;= 1.26.4
 </ul>
 </section>
 <section id="sampling-sdss-legacy-imaging-survey-for-m13">
-<h3>Sampling SDSS Legacy Imaging Survey for M13<a class="headerlink" href="#sampling-sdss-legacy-imaging-survey-for-m13" title="Permalink to this heading">#</a></h3>
+<h3>Sampling SDSS Legacy Imaging Survey for M13<a class="headerlink" href="#sampling-sdss-legacy-imaging-survey-for-m13" title="Link to this heading">#</a></h3>
 <p>In this tutorial, we will be gathering g-band and r-band magnitudes of stars in M13 measured by the SDSS Legacy Imaging survey by querying and downloading data through MAST. We’ll plot these on a CMD where the apparent r-band magnitude is on the y-axis, and color (g-band minus r-band) is on the x-axis. We’ll later plot this CMD with a CMD of isochrones from the <a class="reference external" href="https://stev.oapd.inaf.it/cgi-bin/cmd">PARSEC database</a>.</p>
 <p>For the purpose of this tutorial, we will only focus on querying by object name. We can query the SDSS Legacy Imaging Survey for M13 data using <code class="docutils literal notranslate"><span class="pre">objectname=&quot;M13&quot;</span></code>.</p>
 <div class="cell docutils container">
@@ -876,7 +888,7 @@ numpy &gt;= 1.26.4
 <p>From the query results, we can see that there are 17 SDSS fields that cover M13! The distance column shows how far each field is from the center of the cluster in arcseconds.</p>
 </section>
 <section id="downloading-sdss-legacy-imaging-survey-data-products">
-<h3>Downloading SDSS Legacy Imaging Survey Data Products<a class="headerlink" href="#downloading-sdss-legacy-imaging-survey-data-products" title="Permalink to this heading">#</a></h3>
+<h3>Downloading SDSS Legacy Imaging Survey Data Products<a class="headerlink" href="#downloading-sdss-legacy-imaging-survey-data-products" title="Link to this heading">#</a></h3>
 <p>For each image, there are 7 available products: The preview .jpg image, the FITS files in each respective SDSS filter (u, g, r, i, and z), and the full FITS file with all five filters combined. The full FITS file is listed as <code class="docutils literal notranslate"><span class="pre">SDSS</span> <span class="pre">Imaging</span> <span class="pre">Catalogs</span></code> for the <code class="docutils literal notranslate"><span class="pre">productSubGroupDescription</span></code> parameter.</p>
 <p>For more information about products available at MAST, you can check out the <a class="reference external" href="https://outerspace.stsci.edu/display/SDSS/Legacy+Imaging+Data+Products">SDSS Legacy Imaging Survey Documentation</a>.</p>
 <div class="cell docutils container">
@@ -1006,7 +1018,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </section>
 <section id="creating-a-color-magnitude-diagram-of-m13">
-<h3>Creating a Color-Magnitude Diagram of M13<a class="headerlink" href="#creating-a-color-magnitude-diagram-of-m13" title="Permalink to this heading">#</a></h3>
+<h3>Creating a Color-Magnitude Diagram of M13<a class="headerlink" href="#creating-a-color-magnitude-diagram-of-m13" title="Link to this heading">#</a></h3>
 <p>To obtain magnitudes from the FITS file, we’ll be using <code class="docutils literal notranslate"><span class="pre">PSFMAG</span></code> from the first file extension. Within <code class="docutils literal notranslate"><span class="pre">PSFMAG</span></code> there are 5 total columns, each one corresponding to the apparent magnitudes in the u, g, r, i, or z filters. We’ll extract the g-band magnitudes from the second column and the r-band magnitudes from the third column.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1051,7 +1063,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </section>
 <hr class="docutils" />
 <section id="finding-the-distance-to-m13-using-data-from-gaia">
-<h2>Finding the Distance to M13 Using Data from Gaia<a class="headerlink" href="#finding-the-distance-to-m13-using-data-from-gaia" title="Permalink to this heading">#</a></h2>
+<h2>Finding the Distance to M13 Using Data from Gaia<a class="headerlink" href="#finding-the-distance-to-m13-using-data-from-gaia" title="Link to this heading">#</a></h2>
 <p>Gaia was launched by the European Space Agency (ESA) in December 2013. Orbiting at L2, its main purpose is to observe billions of stars to create a 3D map of our galaxy. Gaia provides data such as astrometry, photometry, and radial velocities For more information about Gaia, visit the <a class="reference external" href="https://www.esa.int/Science_Exploration/Space_Science/Gaia">ESA website</a>.</p>
 <p>We’ll query Gaia for M13 data using a search radius of 0.375 degrees. This narrows our search so that we focus on the cluster stars rather than foreground stars, allowing us to get a more accurate distance.</p>
 <p>The catalog search should take around a minute or so.</p>
@@ -1169,7 +1181,7 @@ Distance to M13: 7.6951 kpc
 </section>
 <hr class="docutils" />
 <section id="determining-the-age-of-m13-using-stellar-isochrone-matching">
-<h2>Determining the Age of M13 Using Stellar Isochrone Matching<a class="headerlink" href="#determining-the-age-of-m13-using-stellar-isochrone-matching" title="Permalink to this heading">#</a></h2>
+<h2>Determining the Age of M13 Using Stellar Isochrone Matching<a class="headerlink" href="#determining-the-age-of-m13-using-stellar-isochrone-matching" title="Link to this heading">#</a></h2>
 <p>We can determine the approximate age of M13 by plotting its CMD with isochrones of varying ages, and match the best fit isochrone track to the M13 data.</p>
 <p>The isochrones are located in the .txt file <code class="docutils literal notranslate"><span class="pre">isochrones.txt</span></code>. These were the result of generating isochrones from the <a class="reference external" href="https://stev.oapd.inaf.it/cgi-bin/cmd">PARSEC database</a> with a metallicity of -1.33 dex and ages from 2 billion years old to 14 billion years old in step sizes of 1 billion years. The other settings were left as default.</p>
 <p>Since the SDSS Legacy Survey observed apparent magnitudes, we’ll need to convert the absolute magnitudes from the isochrones to apparent magnitudes. We’ll use the distance modulus formula since we know the approximate distance to M13 <a class="reference external" href="https://astronomy.swin.edu.au/cosmos/d/Distance+Modulusx">[9]</a>:
@@ -1339,12 +1351,12 @@ where \)</span>m<span class="math notranslate nohighlight">\( is apparent magnit
 </section>
 <hr class="docutils" />
 <section id="end-of-tutorial">
-<h2>End of Tutorial<a class="headerlink" href="#end-of-tutorial" title="Permalink to this heading">#</a></h2>
+<h2>End of Tutorial<a class="headerlink" href="#end-of-tutorial" title="Link to this heading">#</a></h2>
 <p>Congratulations, you now know how to determine the age of a star cluster from isochrone matching using the SDSS Legacy Imaging Survey!</p>
 </section>
 <hr class="docutils" />
 <section id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
+<h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
 <p>Now it’s your turn to determine the age of <strong>Messier 3</strong>! M3 has a metallicity of -1.34 dex, which is nearly identical to M13, so you can use the same isochrone file <code class="docutils literal notranslate"><span class="pre">isochrones.txt</span></code> <a class="reference external" href="https://academic.oup.com/mnras/article/404/3/1203/1049211?login=true#92596831">[5]</a>.</p>
 <p>There are six different fields available for M3, you can choose whichever one visually has the best looking CMD when plotted, so answers can vary slightly.</p>
 <div class="cell docutils container">
@@ -1392,7 +1404,7 @@ where \)</span>m<span class="math notranslate nohighlight">\( is apparent magnit
 </section>
 <hr class="docutils" />
 <section id="exercise-solutions">
-<h2>Exercise Solutions<a class="headerlink" href="#exercise-solutions" title="Permalink to this heading">#</a></h2>
+<h2>Exercise Solutions<a class="headerlink" href="#exercise-solutions" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Query SDSS Legacy Imaging Survey for M3 data</span>
@@ -1680,7 +1692,7 @@ The data for M3 appear to fit between the yellow and orange lines. Therefore, M3
 </section>
 <hr class="docutils" />
 <section id="addtional-resources">
-<h2>Addtional Resources<a class="headerlink" href="#addtional-resources" title="Permalink to this heading">#</a></h2>
+<h2>Addtional Resources<a class="headerlink" href="#addtional-resources" title="Link to this heading">#</a></h2>
 <p>Additional resources are linked below:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://archive.stsci.edu/missions-and-data/sdss">SDSS Legacy Archive at MAST</a></p></li>
@@ -1693,7 +1705,7 @@ The data for M3 appear to fit between the yellow and orange lines. Therefore, M3
 </ul>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use data from MAST for published research, please see the following links for information on which citations to include in your paper:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://sdss.org/collaboration/citing-sdss/">Citing SDSS</a></p></li>
@@ -1702,13 +1714,13 @@ The data for M3 appear to fit between the yellow and orange lines. Therefore, M3
 </ul>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <p><strong>Author(s):</strong> Natalie Haugen (nhaugen&#64;terpmail.umd.edu) and Julie Imig (jimig&#64;stsci.edu) <br>
 <strong>Keyword(s):</strong> Tutorial, SDSS, SDSS Legacy Imaging Survey, stars, HR diagram, CMD, imaging <br>
 <strong>First published:</strong> July 2025 <br>
 <strong>Last updated:</strong> July 2025 <br></p>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#top"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/style-guides/master/guides/images/stsci-logo.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/style-guides/master/guides/images/stsci-logo.png" style="width: 200px;" /></a></p>
 </section>
 </section>

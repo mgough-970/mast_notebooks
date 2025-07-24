@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Mapping Galaxy Properties with MaNGA + HST &#8212; MAST Notebook Repository</title>
   
@@ -29,35 +28,33 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/main.css?v=32d70693" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-SK672ZMP7G"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -65,12 +62,16 @@
                 gtag('js', new Date());
                 gtag('config', 'G-SK672ZMP7G');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-SK672ZMP7G');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/SDSS/MaNGA_HST_tutorial/MaNGA_HST_tutorial';</script>
@@ -174,7 +175,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -452,9 +464,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -479,14 +491,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://timeseries.science.stsci.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/spacetelescope/mast_notebooks&urlpath=lab/tree/mast_notebooks/notebooks/SDSS/MaNGA_HST_tutorial/MaNGA_HST_tutorial.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onJupyterHub"
+   title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_jupyterhub.svg">
+    <img alt="JupyterHub logo" src="../../../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -626,9 +638,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -691,10 +703,10 @@ document.write(`
                   
   <p><a id="top"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="mapping-galaxy-properties-with-manga-hst">
-<h1>Mapping Galaxy Properties with MaNGA + HST<a class="headerlink" href="#mapping-galaxy-properties-with-manga-hst" title="Permalink to this heading">#</a></h1>
+<h1>Mapping Galaxy Properties with MaNGA + HST<a class="headerlink" href="#mapping-galaxy-properties-with-manga-hst" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <section id="learning-goals">
-<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Permalink to this heading">#</a></h2>
+<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <p>By the end of this tutorial, you will:</p>
 <ul class="simple">
 <li><p>Understand how to search the MAST Archive and download SDSS MaNGA data using <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code></p></li>
@@ -704,46 +716,46 @@ document.write(`
 </ul>
 </section>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><span class="xref myst">Introduction</span></p></li>
-<li><p><span class="xref myst">Imports</span></p></li>
-<li><p><span class="xref myst">Accessing MaNGA data at MAST</span></p>
+<li><p><a class="reference internal" href="#Introduction"><span class="xref myst">Introduction</span></a></p></li>
+<li><p><a class="reference internal" href="#Imports"><span class="xref myst">Imports</span></a></p></li>
+<li><p><a class="reference internal" href="#MaNGA"><span class="xref myst">Accessing MaNGA data at MAST</span></a></p>
 <ul>
-<li><p><span class="xref myst">Querying All MaNGA data</span></p></li>
-<li><p><span class="xref myst">Searching for a specific galaxy</span></p></li>
-<li><p><span class="xref myst">Downloading MaNGA data products</span></p></li>
-<li><p><span class="xref myst">Plotting velocity and flux maps from MaNGA</span></p></li>
+<li><p><a class="reference internal" href="#MaNGA-query"><span class="xref myst">Querying All MaNGA data</span></a></p></li>
+<li><p><a class="reference internal" href="#MaNGA-galaxy"><span class="xref myst">Searching for a specific galaxy</span></a></p></li>
+<li><p><a class="reference internal" href="#MaNGA-download"><span class="xref myst">Downloading MaNGA data products</span></a></p></li>
+<li><p><a class="reference internal" href="#MaNGA-plot"><span class="xref myst">Plotting velocity and flux maps from MaNGA</span></a></p></li>
 </ul>
 </li>
-<li><p><span class="xref myst">Searching for HST data of this galaxy</span></p>
+<li><p><a class="reference internal" href="#HST"><span class="xref myst">Searching for HST data of this galaxy</span></a></p>
 <ul>
-<li><p><span class="xref myst">Coordinate search using astroquery.mast</span></p></li>
-<li><p><span class="xref myst">Colorizing HST images with astropy</span></p></li>
+<li><p><a class="reference internal" href="#HST-query"><span class="xref myst">Coordinate search using astroquery.mast</span></a></p></li>
+<li><p><a class="reference internal" href="#HST-colorize"><span class="xref myst">Colorizing HST images with astropy</span></a></p></li>
 </ul>
 </li>
-<li><p><span class="xref myst">Combining MaNGA and HST data</span></p>
+<li><p><a class="reference internal" href="#HST-MaNGA"><span class="xref myst">Combining MaNGA and HST data</span></a></p>
 <ul>
-<li><p><span class="xref myst">Creating an H-alpha Emission Map</span></p></li>
-<li><p><span class="xref myst">Plotting the stellar velocity field</span></p></li>
+<li><p><a class="reference internal" href="#HST-MaNGA-Halpha"><span class="xref myst">Creating an H-alpha Emission Map</span></a></p></li>
+<li><p><a class="reference internal" href="#HST-MaNGA-Velocity"><span class="xref myst">Plotting the stellar velocity field</span></a></p></li>
 </ul>
 </li>
-<li><p><span class="xref myst">Additional Resources</span></p>
+<li><p><a class="reference internal" href="#Resources"><span class="xref myst">Additional Resources</span></a></p>
 <ul>
-<li><p><span class="xref myst">How to Cite</span></p></li>
-<li><p><span class="xref myst">About This Notebook</span></p></li>
+<li><p><a class="reference internal" href="#Citations"><span class="xref myst">How to Cite</span></a></p></li>
+<li><p><a class="reference internal" href="#About"><span class="xref myst">About This Notebook</span></a></p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p><a id="Introduction"></a></p>
 <p>The <a class="reference external" href="https://www.sdss4.org/surveys/manga/">Mapping Nearby Galaxies at Apache Point Observatory (MaNGA)</a> survey provides optical-wavelength integral field unit (IFU) spectroscopy for over 10,000 nearby galaxies. MaNGA collected data between 2014 - 2020 as part of the <a class="reference external" href="https://www.sdss4.org">Sloan Digital Sky Survey (SDSS-IV) project</a>. MaNGA data is now available at the <a class="reference external" href="https://archive.stsci.edu">Mikulski Archive for Space Telescopes (MAST)</a> through the <a class="reference external" href="https://outerspace.stsci.edu/display/SDSS/The+SDSS+Legacy+Archive+at+MAST">SDSS Legacy Archive at MAST</a>.</p>
 <p>In this notebook tutorial, we will demonstrate how to access MaNGA data at MAST using Python. One MaNGA observation, an interacting galaxy pair named <code class="docutils literal notranslate"><span class="pre">MaNGA</span> <span class="pre">7443-12703</span></code> will be used to demonstrate the basics of how to download and plot MaNGA data. We will then combine this MaNGA data with HST observations, also accessible from MAST, to study this galaxy pair in detail, exploring how its gas and stars are moving as the galaxies merge together.</p>
 </section>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h2>
 <p><a id="Imports"></a></p>
 <p>The main packages we’re using for this notebook and their use-cases are:</p>
 <ul class="simple">
@@ -794,13 +806,13 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="accessing-manga-data-at-mast">
-<h1>Accessing MaNGA data at MAST<a class="headerlink" href="#accessing-manga-data-at-mast" title="Permalink to this heading">#</a></h1>
+<h1>Accessing MaNGA data at MAST<a class="headerlink" href="#accessing-manga-data-at-mast" title="Link to this heading">#</a></h1>
 <p>The <a class="reference external" href="https://outerspace.stsci.edu/display/SDSS/The+SDSS+Legacy+Archive+at+MAST">SDSS Legacy Archive at MAST</a> hosts all of the science-ready data products from the <a class="reference external" href="https://www.sdss4.org/surveys/manga/">SDSS-IV MaNGA Survey</a>, which includes data for over 10,000 different nearby galaxies taken with the Apache Point Observatory SDSS-2.5m telescope. This notebook will demonstrate how to search and download MaNGA data using MAST.</p>
 <img src="https://www.sdss4.org/wp-content/uploads/2014/07/manga_v3.jpg" alt="The SDSS MaNGA survey obtains spectra across the entire face of target galaxies using custom designed fiber bundles. The title text in the top-center of the image reads 'SDSS-IV Dissects 10,000 Galaxies in Nearby Universe'. In the top left corner is a small inset image of the SDSS 2.5m telescope at Apache Point Observatory, where the MaNGA data was taken. The center-left shows an image of a pair of hands plugging an optical fiber into the MaNGA instrument. The SDSS-IV logo is in the bottom-left. A close-up photo of the MaNGA instrument is shown in the center and bottom-right area of the image, demonstrating that each MaNGA data cube is made from dozens of optical fibers arranged in a hexagon shape, which each take a spectrum at a different location in the galaxy. The top-right inset shows two example spectra from MaNGA, one taken from the center of the fiber bundle (labeled 1) and one taken from the edge of the fiber bundle (labeled 2), showing how the spectrum of the central regions differs dramatically from outer regions. Image Credit: Dana Berry / SkyWorks Digital Inc., David Law, and the SDSS collaboration." width="500px">
 <center><i>Image Credit: Dana Berry / SkyWorks Digital Inc., David Law, and the SDSS collaboration.</i></center>
 <p><a id="MaNGA-query"></a></p>
 <section id="querying-all-manga-data">
-<h2>Querying all MaNGA data<a class="headerlink" href="#querying-all-manga-data" title="Permalink to this heading">#</a></h2>
+<h2>Querying all MaNGA data<a class="headerlink" href="#querying-all-manga-data" title="Link to this heading">#</a></h2>
 <p>Searching for MaNGA data is straightforward with <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code>. In this example, we use <code class="docutils literal notranslate"><span class="pre">Observations.query_criteria</span></code> and search for <code class="docutils literal notranslate"><span class="pre">provenance_name</span> <span class="pre">=</span> <span class="pre">'MaNGA'</span></code>. This will return a table describing all of the MaNGA data hosted by the MAST archive.</p>
 <p>Other useful search parameters for MaNGA data might include:</p>
 <ul class="simple">
@@ -838,7 +850,7 @@ document.write(`
 <p><a id="MaNGA-galaxy"></a></p>
 </section>
 <section id="searching-for-a-specific-galaxy">
-<h2>Searching for a specific galaxy<a class="headerlink" href="#searching-for-a-specific-galaxy" title="Permalink to this heading">#</a></h2>
+<h2>Searching for a specific galaxy<a class="headerlink" href="#searching-for-a-specific-galaxy" title="Link to this heading">#</a></h2>
 <p>Let’s narrow down the search to one particular galaxy: MaNGA galaxy 7443-12703, also known as “Mrk 848B”. This is an interacting galaxy pair currently undergoing a merger event: the two galaxies are colliding and will eventually merge together into one large galaxy. Studying merger events like this one help us understand how galaxies grow and evolve over time.</p>
 <p>We can search for this galaxy in particular using the <code class="docutils literal notranslate"><span class="pre">obs_id</span></code> keyword:</p>
 <div class="cell docutils container">
@@ -863,7 +875,7 @@ document.write(`
 <p><a id="MaNGA-download"></a></p>
 </section>
 <section id="downloading-manga-data-products">
-<h2>Downloading MaNGA data products<a class="headerlink" href="#downloading-manga-data-products" title="Permalink to this heading">#</a></h2>
+<h2>Downloading MaNGA data products<a class="headerlink" href="#downloading-manga-data-products" title="Link to this heading">#</a></h2>
 <p>List all of the data products availble for this galaxy using <code class="docutils literal notranslate"><span class="pre">Observations.get_product_list()</span></code>.</p>
 <p>There are 13 total files available for this galaxy, which include include a preview image (<code class="docutils literal notranslate"><span class="pre">12703.png</span></code>), the 3D MaNGA spectral cube (<code class="docutils literal notranslate"><span class="pre">manga-7443-12703-LOGCUBE.fits.gz</span></code>), and the MaNGA MAP file (<code class="docutils literal notranslate"><span class="pre">manga-7443-12703-MAPS-HYB10-MILESHC-MASTARSSP.fits.gz</span></code>) which contains measurements and parameters from the MaNGA data analysis pipeline.</p>
 <p>More information on all of these products can be seen in the search results table:</p>
@@ -1015,7 +1027,7 @@ document.write(`
 <p><a id="MaNGA-plot"></a></p>
 </section>
 <section id="plotting-velocity-and-flux-maps-from-manga">
-<h2>Plotting velocity and flux maps from MaNGA<a class="headerlink" href="#plotting-velocity-and-flux-maps-from-manga" title="Permalink to this heading">#</a></h2>
+<h2>Plotting velocity and flux maps from MaNGA<a class="headerlink" href="#plotting-velocity-and-flux-maps-from-manga" title="Link to this heading">#</a></h2>
 <p>Now that the MaNGA data has been downloaded, we can plot some of the galaxy properties. The ManGA MAP file (<code class="docutils literal notranslate"><span class="pre">manga-7443-12703-MAPS-HYB10-MILESHC-MASTARSSP.fits.gz</span></code>) contains the output and results from the <a class="reference external" href="https://www.sdss4.org/dr17/manga/manga-analysis-pipeline/">MaNGA Data Analysis Pipeline (DAP)</a>. This example is based off of the <a class="reference external" href="https://www.sdss4.org/dr17/manga/manga-tutorials/dap-tutorial/dap-python-tutorial/">MaNGA DAP Python Tutorial</a>, and plots the g-band flux, the H-alpha emission line flux, and the stellar velocity field from MaNGA.</p>
 <p>The full description of contents of the the MaNGA MAP file is <a class="reference external" href="https://data.sdss.org/datamodel/files/MANGA_SPECTRO_ANALYSIS/DRPVER/DAPVER/DAPTYPE/PLATE/IFU/manga-MAPS-DAPTYPE.html">available here</a>.</p>
 <p>Let’s open the file and view some basic information:</p>
@@ -1208,9 +1220,9 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="searching-for-hst-observations-of-this-galaxy">
-<h1>Searching for HST observations of this galaxy<a class="headerlink" href="#searching-for-hst-observations-of-this-galaxy" title="Permalink to this heading">#</a></h1>
+<h1>Searching for HST observations of this galaxy<a class="headerlink" href="#searching-for-hst-observations-of-this-galaxy" title="Link to this heading">#</a></h1>
 <section id="coordinate-search-using-astroquery-mast">
-<h2>Coordinate search using astroquery.mast<a class="headerlink" href="#coordinate-search-using-astroquery-mast" title="Permalink to this heading">#</a></h2>
+<h2>Coordinate search using astroquery.mast<a class="headerlink" href="#coordinate-search-using-astroquery-mast" title="Link to this heading">#</a></h2>
 <p>Now let’s search for HST obersvations of this same galaxy. Similar to before, we will be using <code class="docutils literal notranslate"><span class="pre">Observations.query_criteria()</span></code> to search the MAST archive, but this time, we will search for HST observations (<code class="docutils literal notranslate"><span class="pre">obs_collection='HST'</span></code>) near the coordinates of this MaNGA galaxy pair.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1316,7 +1328,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <p><a id="HST-plot"></a></p>
 </section>
 <section id="plot-the-hst-images">
-<h2>Plot the HST images<a class="headerlink" href="#plot-the-hst-images" title="Permalink to this heading">#</a></h2>
+<h2>Plot the HST images<a class="headerlink" href="#plot-the-hst-images" title="Link to this heading">#</a></h2>
 <p>Let’s plot the three HST images.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1378,7 +1390,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <p><a id="HST-colorize"></a></p>
 </section>
 <section id="colorizing-hst-images-with-astropy">
-<h2>Colorizing HST images with astropy<a class="headerlink" href="#colorizing-hst-images-with-astropy" title="Permalink to this heading">#</a></h2>
+<h2>Colorizing HST images with astropy<a class="headerlink" href="#colorizing-hst-images-with-astropy" title="Link to this heading">#</a></h2>
 <p>We can combine all three HST images here and colorize them using the <code class="docutils literal notranslate"><span class="pre">make_lupton_rgb()</span></code> function from astropy. This function takes image data from three filter images, and combines them as an RGB image. In this example, we will order by wavelength and map the IR filter (F160W) to the red channel (‘r’), the F814W filter to the green channel (‘g’), and the F435W filter to the blue channel (‘b’).</p>
 <p>Before we colorize the images, however, we need to reproject them onto the same coordinate system. We will resample the F160W and F814W images to the same projection as the F435W image, because the F435W image is the largest.</p>
 <div class="cell docutils container">
@@ -1443,7 +1455,7 @@ F435W shape: (4358, 4228)
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="combining-manga-and-hst-data">
-<h1>Combining MaNGA and HST data<a class="headerlink" href="#combining-manga-and-hst-data" title="Permalink to this heading">#</a></h1>
+<h1>Combining MaNGA and HST data<a class="headerlink" href="#combining-manga-and-hst-data" title="Link to this heading">#</a></h1>
 <p>Now that we have downloaded both MaNGA and HST data, let’s combine them into one plot to map some of properties of this merging pair of galaxies!</p>
 <p>The key to combining the HST and MaNGA data is the <a class="reference external" href="https://astropy-astrofrog.readthedocs.io/en/latest/wcs/">World Coordinate System (WCS)</a> transformations done by astropy. Using information from the file headers, <code class="docutils literal notranslate"><span class="pre">astropy.wcs()</span></code> will calculate the RA and DEC coordinates corresponding to each pixel in the image, allowing us to project both datasets on the same figure.</p>
 <div class="cell docutils container">
@@ -1532,7 +1544,7 @@ F435W shape: (4358, 4228)
 <p>This plot encapsulates everything we have learned so far, showing the colorized HST image (left), the H-alpha flux from MaNGA (middle), and combining them both into a single image (right).</p>
 <p><a id="HST-MaNGA-Halpha"></a></p>
 <section id="creating-an-h-alpha-emission-map">
-<h2>Creating an H-alpha Emission Map<a class="headerlink" href="#creating-an-h-alpha-emission-map" title="Permalink to this heading">#</a></h2>
+<h2>Creating an H-alpha Emission Map<a class="headerlink" href="#creating-an-h-alpha-emission-map" title="Link to this heading">#</a></h2>
 <p>We can isolate the last panel and plot it by itself, too.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1574,7 +1586,7 @@ F435W shape: (4358, 4228)
 <p><a id="HST-MaNGA-Velocity"></a></p>
 </section>
 <section id="plotting-the-stellar-velocity-field">
-<h2>Plotting the stellar velocity field<a class="headerlink" href="#plotting-the-stellar-velocity-field" title="Permalink to this heading">#</a></h2>
+<h2>Plotting the stellar velocity field<a class="headerlink" href="#plotting-the-stellar-velocity-field" title="Link to this heading">#</a></h2>
 <p>Last but not least, let’s do the same thing with the stellar velocity! The stellar velocity field from MaNGA will show which parts of the galaxies are redshifted (moving away from us, which we will plot in red), and which parts are blueshifted (moving toward us, which we will plot in blue).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1623,7 +1635,7 @@ F435W shape: (4358, 4228)
 <p><a id="Resources"></a></p>
 </section>
 <section id="additional-resources">
-<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h2>
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">#</a></h2>
 <p>Additional resources are linked below:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://archive.stsci.edu/missions-and-data/sdss">SDSS Legacy Archive at MAST</a></p></li>
@@ -1633,7 +1645,7 @@ F435W shape: (4358, 4228)
 </ul>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p><a id="Citations"></a></p>
 <p>If you use MaNGA data for published research, see the following links for information on which citations to include in your paper:</p>
 <ul class="simple">
@@ -1644,7 +1656,7 @@ F435W shape: (4358, 4228)
 </ul>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <p><a id="About"></a></p>
 <p>For questions or issues with this notebook, you can open a github issue or email archive&#64;stsci.edu.</p>
 <p><strong>Authors:</strong> Julie Imig, Brian Cherinka <br>
@@ -1652,7 +1664,7 @@ F435W shape: (4358, 4228)
 <strong>First published:</strong> October 2024 <br>
 <strong>Last updated:</strong> October 2024 <br></p>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#top"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/style-guides/master/guides/images/stsci-logo.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/style-guides/master/guides/images/stsci-logo.png" style="width: 200px;" /></a></p>
 </section>
 </section>
